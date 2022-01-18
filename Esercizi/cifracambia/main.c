@@ -13,6 +13,7 @@ int main(int argc, char **argv)
     char *r = (char *) malloc(10);
     strcpy(r, "abcxyz");
     int d = cambia(r, 5);
+    printf("Stringa s: %s cambiata(6): %d \nStringa r: %s, cambiata(6): %d\n", s,c,r,d);
     if (strcmp(s, "bcdyza") == 0 && c == 6 && strcmp(r, "fghcde") == 00 && d == 6) {
         printf("Corretto\n");
     }
