@@ -1,6 +1,6 @@
         .text
         .global mydiv @ r0 contiene il dividendo,
-                      @ r1 il divisore,
+        .type mydiv, %function @ r1 il divisore,
                       @ r0 conterrà il risultato finale
 mydiv:  mov r2, r1 @ sposto il divisore in r2
         mov r1, r0 @ sposto il dividendo in r1

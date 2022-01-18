@@ -5,6 +5,10 @@ extern void vect_scalar(int *, int, int);
 
 int main(int argc, char **argv)
 {
+	if (argc != 2) {
+			printf("Inserire un numero come parametro \n");
+			return 0;
+	}
     int array[9] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
     printf("Vettore iniziale: [");
@@ -13,7 +17,7 @@ int main(int argc, char **argv)
     }
     printf("%d]\n", array[8]);
 
-    int x = 3;
+    int x = atoi(argv[1]);
 
     vect_scalar(array, x, 9);
 
